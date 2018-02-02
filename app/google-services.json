@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "429331650850",
+    "firebase_url": "https://digitalfarmershakaton.firebaseio.com",
+    "project_id": "digitalfarmershakaton",
+    "storage_bucket": "digitalfarmershakaton.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:429331650850:android:df40fca8f31248b3",
+        "android_client_info": {
+          "package_name": "com.example.user.hakaton"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "429331650850-lm8egp0ngopo5mk47lqketni25bj5cg4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.hakaton",
+            "certificate_hash": "7a5ef48cab230c3a23e8835f5815cbc102638467"
+          }
+        },
+        {
+          "client_id": "429331650850-fj9qm43u2fh6i6dlhar9mnkl4ra2gb2f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2XZhtiaiGLCnqar3MWAwjsZ0IPZ5DB0g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "429331650850-fj9qm43u2fh6i6dlhar9mnkl4ra2gb2f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

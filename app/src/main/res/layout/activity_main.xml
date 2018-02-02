@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/MainActivityLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DigitalFarmersWhiteTint"
+    android:padding="24dp"
+    tools:context="com.example.user.hakaton.MainActivity">
+
+    <ImageView
+        android:id="@+id/formScreenLogo"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/df_mobile_green_logo"/>
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_below="@id/formScreenLogo"
+        android:textSize="18dp"
+        android:paddingLeft="48dp"
+        android:paddingRight="48dp"
+        android:gravity="center"
+        android:text="Please, enter your data to log in or to register if you are a new user"
+        android:textColor="@color/DigitalFarmersFaddedGray"/>
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e-mail"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/label"
+        android:layout_marginBottom="16dp"
+        style="@style/DigitalFarmersEditText"/>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:layout_below="@id/emailEditText"
+        android:inputType="textPassword"
+        android:layout_marginBottom="24dp"
+        style="@style/DigitalFarmersEditText"/>
+
+    <LinearLayout
+        android:layout_below="@id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/logInButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:text="Log In"
+            style="@style/DigitalFarmersButton"/>
+
+        <Button
+            android:id="@+id/signInButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:text="Register"
+            style="@style/DigitalFarmersButton"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

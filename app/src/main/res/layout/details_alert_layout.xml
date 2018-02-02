@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="16dp"
+    android:background="@color/DigitalFarmersWhiteTint"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/detailUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/DigitalFarmersDark"
+        android:layout_marginBottom="4dp"
+        android:text="Vasea Buzduganu"/>
+
+    <TextView
+        android:id="@+id/detailTelephone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/DigitalFarmersFaddedGray"
+        android:layout_marginBottom="16dp"
+        android:text="+37369882203"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/DigitalFarmersFaddedGray"
+        android:text="Offers"/>
+    
+    <TextView
+        android:id="@+id/whatOffers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:textColor="@color/DigitalFarmersDark"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:text="Patlajele"/>
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/DigitalFarmersEditText"
+        android:hint="Type your offer"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:paddingTop="16dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/leaveDetailButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            style="@style/DigitalFarmersButtonNegative"
+            android:text="Back"/>
+
+        <Button
+            android:id="@+id/confirmButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            style="@style/DigitalFarmersButton"
+            android:text="Confirm"/>
+
+    </LinearLayout>
+
+</LinearLayout>

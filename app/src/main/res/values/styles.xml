@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:background">@color/DigitalFarmersGreen</item>
+    </style>
+
+    <style name="DigitalFarmersEditText">
+        <item name="android:background">@drawable/edit_field_shape</item>
+        <item name="android:textColor">@color/DigitalFarmersDark</item>
+        <item name="android:textColorHint">#919191</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="DigitalFarmersButton">
+        <item name="android:background">@drawable/button_shape</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="DigitalFarmersButtonNegative" parent="DigitalFarmersButton">
+        <item name="android:background">@drawable/negative_button_shape</item>
+    </style>
+
+    <style name="DigitalFarmersProfileLabel">
+        <item name="android:textColor">@color/DigitalFarmersFaddedGray</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+    
+    <style name="DigitalFarmersLabelButton">
+        <item name="android:textColor">@color/DigitalFarmersGreen</item>
+        <item name="android:background">#00ffffff</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginRight">16dp</item>
+    </style>
+
+</resources>

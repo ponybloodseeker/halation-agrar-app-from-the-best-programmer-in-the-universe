@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DigitalFarmersDark"
+    android:focusableInTouchMode="true"
+    android:descendantFocusability="beforeDescendants"
+    tools:context="com.example.user.hakaton.ProfileActivity">
+
+    <ImageView
+        android:id="@+id/profilePic"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:src="@drawable/df_mobile_logo"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/prefsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User profile"
+        android:textColor="#ffffffff"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_below="@id/profilePic"/>
+
+    <ScrollView
+        android:layout_below="@id/prefsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="0dp"
+        android:layout_marginTop="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingBottom="24dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/signOutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign out"
+                android:textSize="12dp"
+                android:layout_gravity="right"
+                android:textColor="#ffffffff"/>
+
+            <TextView
+                android:id="@+id/userNameLabel"
+                android:layout_width="match_parent"
+                android:text="Nickname"
+                style="@style/DigitalFarmersProfileLabel"
+                android:layout_below="@id/profilePic"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_below="@id/userNameLabel"
+                android:id="@+id/userNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vasea Buzduganu"
+                style="@style/DigitalFarmersEditText"/>
+
+            <TextView
+                android:id="@+id/phoneNumberLabel"
+                android:layout_width="match_parent"
+                android:text="Phonenumber"
+                style="@style/DigitalFarmersProfileLabel"
+                android:layout_below="@id/userNameEditText"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_below="@id/phoneNumberLabel"
+                android:id="@+id/phoneNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vasea Buzduganu"
+                style="@style/DigitalFarmersEditText"/>
+
+            <TextView
+                android:id="@+id/locationLabel"
+                android:layout_width="match_parent"
+                android:text="Location"
+                style="@style/DigitalFarmersProfileLabel"
+                android:layout_below="@id/phoneNumberEditText"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_below="@id/locationLabel"
+                android:id="@+id/locationField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sat. Taraclia str. Bobochilor 7/65"
+                style="@style/DigitalFarmersEditText"/>
+
+            <Button
+                android:id="@+id/getMyLocationButton"
+                android:layout_below="@id/locationField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/DigitalFarmersLabelButton"
+                android:layout_gravity="right"
+                android:layout_marginBottom="32dp"
+                android:text="Get my current location" />
+
+            <LinearLayout
+                android:layout_below="@id/getMyLocationButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/cancelProfileButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="8dp"
+                    android:text="Cancel"
+                    style="@style/DigitalFarmersButtonNegative"/>
+
+                <Button
+                    android:id="@+id/saveProfileButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="8dp"
+                    android:text="Save"
+                    style="@style/DigitalFarmersButton"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DigitalFarmersDark"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.user.hakaton.DealFactoryActivity">
+
+    <TextView
+        android:id="@+id/dealFactoryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Establish a new deal"
+        android:focusedByDefault="false"
+        android:textColor="#ffffffff"
+        android:textSize="18dp" />
+
+    <ScrollView
+        android:layout_below="@id/dealFactoryLabel"
+        android:scrollbarSize="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="I want"
+                android:textColor="@color/DigitalFarmersFaddedGray" />
+
+            <EditText
+                android:id="@+id/dealFactoryIWantEditField"
+                style="@style/DigitalFarmersEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="..." />
+
+            <!--
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingBottom="8dp"
+                android:text="Description"
+                android:textColor="@color/DigitalFarmersFaddedGray" />
+
+            <EditText
+                android:id="@+id/dealFactoryDescription"
+                style="@style/DigitalFarmersEditText"
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:layout_marginBottom="32dp"
+                android:gravity="start"
+                android:hint="..." />
+                -->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="24dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/cancelDealButton"
+            style="@style/DigitalFarmersButtonNegative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/addDealButton"
+            style="@style/DigitalFarmersButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="Publish" />
+
+    </LinearLayout>
+
+</RelativeLayout>
